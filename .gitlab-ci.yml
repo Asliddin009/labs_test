@@ -23,8 +23,8 @@ stages: # List of stages for jobs, and their order of execution
 build-job: # This job runs in the build stage, which runs first.
   stage: build
   script:
-    - flutter clean
-    - flutter pub get
+    - dart clean
+    - pub get
 
 unit-integration-test-job: # This job runs in the test stage.
   stage: test # It only starts when the job in the build stage completes successfully.
@@ -32,3 +32,5 @@ unit-integration-test-job: # This job runs in the test stage.
     - dart pub get
   script:
     - dart test
+  tags:
+    - test
