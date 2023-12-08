@@ -6,7 +6,7 @@ void main() {
   group('Проверяем статичные методы абстрактоного класса Utils\n', () {
     late List<double> list;
     setUp(() {
-      list = [0.5, 1, 1.3];
+      list = [11.5, 1, 1.3];
     });
     group('тестируем', () {
       test('косинус', () {
