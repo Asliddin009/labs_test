@@ -7,7 +7,6 @@ stages: # List of stages for jobs, and their order of execution
 build-job: # This job runs in the build stage, which runs first.
   stage: build
   script:
-    - dart clean
     - dart pub get
 
 unit-integration-test-job: # This job runs in the test stage.
